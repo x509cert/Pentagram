@@ -14,11 +14,13 @@ Here's some points of interest...
 1) This code was written in 1989!
 2) I was not a seasoned, grumpy developer at the time, it was a hobby!
 3) This ran on an IBM XT compatible machine, with an Intel 8086 CPU in 640kB of RAM and 8MHz
-4) The game did not take advantage of the extra 384kB of extended RAM, by design!
-5) The video card of the day was EGA (https://en.wikipedia.org/wiki/Enhanced_Graphics_Adapter)
-6) I wrote the code on an Amstrad PC1640 (https://en.wikipedia.org/wiki/PC1512) in my bedroom!
-7) The Microsoft Linker that came with the MS C compiler could not handle this code, so I had to use the Phoenix Linker (plink86, https://everything2.com/title/plink) - it allows for more control of overlaid code with better memory management.
-8) The ASM code is primarily to handle video manipulation, such as smooth pixel scrolling of the main window.
-9) I have an EXE of the code, and it runs in DOSBox. My 20yr old son has played it, and says "It doesn't suck!"
-10) To aid installation of the resulting binary and supporting files (bitmaps, maps, dungeons etc.), I wrote my own installation tool, installation language (I called it MELT - Michael's Experimental Language Translator) and compression tool - it used Limpel-Zev and Huffman, whichever offered the best compression based on the data.
-11) I kept out of trouble :) 
+4) It ran on MS-DOS 3.2
+5) The game did not take advantage of the extra 384kB of extended RAM, by design!
+6) The video card of the day was EGA (https://en.wikipedia.org/wiki/Enhanced_Graphics_Adapter)
+7) I wrote the code on an Amstrad PC1640 (https://en.wikipedia.org/wiki/PC1512) in my bedroom!
+8) The Microsoft Linker that came with the MS C compiler could not handle this code, so I had to use the Phoenix Linker (plink86, https://everything2.com/title/plink) - it allows for more control of overlaid code with better memory management.
+9) The ASM code is primarily to handle video manipulation, such as smooth pixel scrolling of the main window.
+10) I have an EXE of the code, and it runs in DOSBox. My 20yr old son has played it, and says "It doesn't suck!"
+11) To aid installation of the resulting binary and supporting files (bitmaps, maps, dungeons etc.), I wrote my own installation tool, installation language (I called it MELT - Michael's Experimental Language Translator) and compression tool - it used Limpel-Zev and Huffman, whichever offered the best compression based on the data.
+12) Remember, filenames back then were only 8.3!
+13) I kept out of trouble :) 
