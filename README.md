@@ -20,5 +20,5 @@ Here's some points of interest...
 7) The Microsoft Linker that came with the MS C compiler could not handle this code, so I had to use the Phoenix Linker (plink) - it allows for more control of overlaid code.
 8) The ASM code is primarily to handle video manipulation, such as smooth pixel scrolling of the main window.
 9) I have an EXE of the code, and it runs in DOSBox. My 20yr old son has played it, and says "It doesn't suck!"
-10) To aid installation of the resulting binary, I wrote my own installation tool, installation language (I called it MELT - Michael's Experimental Language Translator) and compression tool - it used Limpel-Zev and Huffman, whichever was offered the best compression based on the data.
+10) To aid installation of the resulting binary and supporting files (bitmaps, maps, dungeons etc.), I wrote my own installation tool, installation language (I called it MELT - Michael's Experimental Language Translator) and compression tool - it used Limpel-Zev and Huffman, whichever was offered the best compression based on the data.
 11) I kept out of trouble :) 
