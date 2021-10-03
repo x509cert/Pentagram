@@ -24,5 +24,7 @@ Here's some points of interest...
 11) The ASM code is primarily to handle video manipulation, such as smooth pixel scrolling of the main window.
 12) I have an EXE of the code, and it runs in DOSBox. My 20yr old son has played it, and says "It doesn't suck!"
 13) To aid installation of the resulting binary and supporting files (bitmaps, maps, dungeons etc.), I wrote my own installation tool, installation language (I called it MELT - Michael's Experimental Language Translator) and compression tool - it used Limpel-Zev and Huffman, whichever offered the best compression based on the data.
-14) Remember, filenames back then were only 8.3!
-15) I kept out of trouble :) 
+14) I wrote a bunch of supporting tools - a map editor, a dungeon builder and a tool to create sprites and other graphics.
+15) Remember, filenames back then were only 8.3!
+16) I wrote a manual for the game using Windows and Aldus PageMaker and the game won a New Zealand Software Award in 1990 :) 
+17) I kept out of trouble :) 
