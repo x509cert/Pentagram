@@ -15,7 +15,7 @@ Here's some points of interest...
 2) I was not a seasoned, grumpy developer at the time, it was a hobby!
 3) This ran on an IBM XT compatible machine, with an Intel 8086 CPU in 640kB of RAM
 4) The game did not take advantage of the extra 384kB of extended RAM, by design!
-5) The video card of day was EGA
+5) The video card of day was EGA (https://en.wikipedia.org/wiki/Enhanced_Graphics_Adapter)
 6) I wrote the code on an Amstrad PC1640 (https://en.wikipedia.org/wiki/PC1512) in my bedroom!
 7) The Microsoft Linker that came with the MS C compiler could not handle this code, so I had to use the Phoenix Linker (plink) - it allows for more control of overlaid code.
 8) The ASM code is primarily to handle video manipulation, such as smooth pixel scrolling of the main window.
