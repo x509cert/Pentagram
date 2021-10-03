@@ -1,0 +1,648 @@
+ALL:pent.exe
+
+#
+# Program: Pent
+#
+
+#
+# Change the following argument to NDEBUG for final production
+#
+
+STATUS=NDEBUG
+LIMIT=-DNOBOMB
+THRESH=-Gt20
+FP=
+
+PTH=c:\pentsrc
+
+!IF "$(STATUS)"=="DEV"
+
+COMP=$(CC) -f -c -Yu -Od -W4 $(THRESH) $(LIMIT) -AL $(FP) -nologo -D$(STATUS)
+DBCOMP=$(COMP)
+SPCOMP=$(COMP)
+SZCOMP=$(COMP)
+
+!ELSE
+
+COMP=$(CC) -c -Od -W4 $(THRESH) $(LIMIT) -AL -nologo -D$(STATUS)
+DBCOMP=$(CC) -c -W4 $(THRESH) $(LIMIT) -AL -nologo -Zi -D$(STATUS)
+SPCOMP=$(CC) -c -W4 $(THRESH) $(LIMIT) -AL -nologo -Ox -Gs -D$(STATUS)
+SZCOMP=$(CC) -c -W4 $(THRESH) $(LIMIT) -AL -nologo -Oes -Gs -D$(STATUS)
+
+!ENDIF
+
+MAIN_HEAD=$(PTH)\pent.h
+
+pentadvn.obj : $(PTH)\pentadvn.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentadvn.c
+
+pentbank.obj : $(PTH)\pentbank.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentbank.c
+
+pentbard.obj : $(PTH)\pentbard.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentbard.c
+
+pentbomb.obj : $(PTH)\pentbomb.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentbomb.c
+
+pentboss.obj : $(PTH)\pentboss.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentboss.c
+
+pentbox.obj : $(PTH)\pentbox.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentbox.c
+
+pentbrdg.obj : $(PTH)\pentbrdg.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentbrdg.c
+
+pentcath.obj : $(PTH)\pentcath.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcath.c
+
+pentcelt.obj : $(PTH)\pentcelt.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcelt.c
+
+pentchst.obj : $(PTH)\pentchst.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentchst.c
+
+pentcm10.obj : $(PTH)\pentcm10.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm10.c
+
+pentcm15.obj : $(PTH)\pentcm15.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm15.c
+
+pentcm20.obj : $(PTH)\pentcm20.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm20.c
+
+pentcm25.obj : $(PTH)\pentcm25.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm25.c
+
+pentcm30.obj : $(PTH)\pentcm30.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm30.c
+
+pentcm35.obj : $(PTH)\pentcm35.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm35.c
+
+pentcm40.obj : $(PTH)\pentcm40.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm40.c
+
+pentcm45.obj : $(PTH)\pentcm45.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm45.c
+
+pentcm50.obj : $(PTH)\pentcm50.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm50.c
+
+pentcm55.obj : $(PTH)\pentcm55.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm55.c
+
+pentcm56.obj : $(PTH)\pentcm56.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm56.c
+
+pentcm60.obj : $(PTH)\pentcm60.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm60.c
+
+pentcm61.obj : $(PTH)\pentcm61.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm61.c
+
+pentcm62.obj : $(PTH)\pentcm62.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm62.c
+
+pentcm63.obj : $(PTH)\pentcm63.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm63.c
+
+pentcm64.obj : $(PTH)\pentcm64.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm64.c
+
+pentcm65.obj : $(PTH)\pentcm65.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm65.c
+
+pentcm66.obj : $(PTH)\pentcm66.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm66.c
+
+pentcm67.obj : $(PTH)\pentcm67.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm67.c
+
+pentcm70.obj : $(PTH)\pentcm70.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm70.c
+
+pentcm80.obj : $(PTH)\pentcm80.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm80.c
+
+pentcm90.obj : $(PTH)\pentcm90.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentcm90.c
+
+pentdamg.obj : $(PTH)\pentdamg.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentdamg.c
+
+pentdata.obj : $(PTH)\pentdata.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentdata.c
+
+pentdisc.obj : $(PTH)\pentdisc.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentdisc.c
+
+pentdise.obj : $(PTH)\pentdise.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentdise.c
+
+pentdist.obj : $(PTH)\pentdist.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentdist.c
+
+pentdng1.obj : $(PTH)\pentdng1.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentdng1.c
+
+pentdng2.obj : $(PTH)\pentdng2.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentdng2.c
+
+pentdng3.obj : $(PTH)\pentdng3.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentdng3.c
+
+pentdng4.obj : $(PTH)\pentdng4.c $(MAIN_HEAD)
+		$(SPCOMP) $(PTH)\pentdng4.c
+
+penteffc.obj : $(PTH)\penteffc.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\penteffc.c
+
+pentenvp.obj : $(PTH)\pentenvp.c $(MAIN_HEAD)
+        $(SZCOMP) $(PTH)\pentenvp.c
+
+pentfall.obj : $(PTH)\pentfall.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentfall.c
+
+pentfini.obj : $(PTH)\pentfini.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentfini.c
+
+pentfnd1.obj : $(PTH)\pentfnd1.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentfnd1.c
+
+pentfnd2.obj : $(PTH)\pentfnd2.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentfnd2.c
+
+pentfnd3.obj : $(PTH)\pentfnd3.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentfnd3.c
+
+pentfnd4.obj : $(PTH)\pentfnd4.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentfnd4.c
+
+pentfnd5.obj : $(PTH)\pentfnd5.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentfnd5.c
+
+pentfnd6.obj : $(PTH)\pentfnd6.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentfnd6.c
+
+pentfnd7.obj : $(PTH)\pentfnd7.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentfnd7.c
+
+pentfnd8.obj : $(PTH)\pentfnd8.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentfnd8.c
+
+pentgild.obj : $(PTH)\pentgild.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentgild.c
+
+pentgive.obj : $(PTH)\pentgive.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentgive.c
+
+pentgrp1.obj : $(PTH)\pentgrp1.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentgrp1.c
+
+pentgrp2.obj : $(PTH)\pentgrp2.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentgrp2.c
+
+pentgrp3.obj : $(PTH)\pentgrp3.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentgrp3.c
+
+pentgrp4.obj : $(PTH)\pentgrp4.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentgrp4.c
+
+penthll1.obj : $(PTH)\penthll1.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\penthll1.c
+
+penthll2.obj : $(PTH)\penthll2.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\penthll2.c
+
+pentherb.obj : $(PTH)\pentherb.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentherb.c
+
+penthunt.obj : $(PTH)\penthunt.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\penthunt.c
+
+pentinci.obj : $(PTH)\pentinci.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentinci.c
+
+pentinn.obj  : $(PTH)\pentinn.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentinn.c
+
+pentlevl.obj : $(PTH)\pentlevl.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentlevl.c
+
+pentload.obj : $(PTH)\pentload.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentload.c
+
+pentmain.obj : $(PTH)\pentmain.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentmain.c
+
+pentmap.obj  : $(PTH)\pentmap.c $(MAIN_HEAD)
+		$(SPCOMP) $(PTH)\pentmap.c
+
+pentmenu.obj : $(PTH)\pentmenu.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentmenu.c
+
+pentmnth.obj : $(PTH)\pentmnth.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentmnth.c
+
+pentmous.obj : $(PTH)\pentmous.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentmous.c
+
+pentmrk1.obj : $(PTH)\pentmrk1.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentmrk1.c
+
+pentmrk2.obj : $(PTH)\pentmrk2.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentmrk2.c
+
+pentmrk3.obj : $(PTH)\pentmrk3.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentmrk3.c
+
+pentmrk4.obj : $(PTH)\pentmrk4.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentmrk4.c
+
+pentmrk5.obj : $(PTH)\pentmrk5.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentmrk5.c
+
+pentmrk6.obj : $(PTH)\pentmrk6.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentmrk6.c
+
+pentmrk7.obj : $(PTH)\pentmrk6.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentmrk7.c
+
+pentmrk8.obj : $(PTH)\pentmrk8.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentmrk8.c
+
+pentnull.obj : $(PTH)\pentnull.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentnull.c
+
+pentopt.obj : $(PTH)\pentopt.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentopt.c
+
+pentothr.obj : $(PTH)\pentothr.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentothr.c
+
+pentpage.obj : $(PTH)\pentpage.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentpage.c
+
+pentpois.obj : $(PTH)\pentpois.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentpois.c
+
+pentpotn.obj : $(PTH)\pentpotn.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentpotn.c
+
+pentpray.obj : $(PTH)\pentpray.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentpray.c
+
+pentprnt.obj : $(PTH)\pentprnt.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentprnt.c
+
+pentprov.obj : $(PTH)\pentprov.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentprov.c
+
+pentprty.obj : $(PTH)\pentprty.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentprty.c
+
+pentrai1.obj : $(PTH)\pentrai1.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrai1.c
+
+pentrai2.obj : $(PTH)\pentrai2.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrai2.c
+
+pentrai3.obj : $(PTH)\pentrai3.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrai3.c
+
+pentreas.obj : $(PTH)\pentreas.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentreas.c
+
+pentredy.obj : $(PTH)\pentredy.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentredy.c
+
+pentrest.obj : $(PTH)\pentrest.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrest.c
+
+pentring.obj : $(PTH)\pentring.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentring.c
+
+pentrn0.obj : $(PTH)\pentrn0.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrn0.c
+
+pentrn1.obj : $(PTH)\pentrn1.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrn1.c
+
+pentrn2.obj : $(PTH)\pentrn2.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrn2.c
+
+pentrn3.obj : $(PTH)\pentrn3.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrn3.c
+
+pentrn4.obj : $(PTH)\pentrn4.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrn4.c
+
+pentrn5.obj : $(PTH)\pentrn5.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrn5.c
+
+pentrn6.obj : $(PTH)\pentrn6.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrn6.c
+
+pentrn7.obj : $(PTH)\pentrn7.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrn7.c
+
+pentrn8.obj : $(PTH)\pentrn8.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrn8.c
+
+pentrn9.obj : $(PTH)\pentrn9.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrn9.c
+
+pentruin.obj : $(PTH)\pentruin.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentruin.c
+
+pentrumr.obj : $(PTH)\pentrumr.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrumr.c
+
+pentrune.obj : $(PTH)\pentrune.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentrune.c
+
+pentshow.obj : $(PTH)\pentshow.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentshow.c
+
+pentsign.obj : $(PTH)\pentsign.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentsign.c
+
+pentsitu.obj : $(PTH)\pentsitu.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentsitu.c
+
+pentsnd.obj  : $(PTH)\pentsnd.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentsnd.c
+
+pentsnot.obj : $(PTH)\pentsnot.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentsnot.c
+
+pentsort.obj : $(PTH)\pentsort.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentsort.c
+
+pentspc1.obj : $(PTH)\pentspc1.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspc1.c
+
+pentspc2.obj : $(PTH)\pentspc2.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspc2.c
+
+pentspc3.obj : $(PTH)\pentspc3.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspc3.c
+
+pentspc4.obj : $(PTH)\pentspc4.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspc4.c
+
+pentspc5.obj : $(PTH)\pentspc5.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspc5.c
+
+pentspc6.obj : $(PTH)\pentspc6.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspc6.c
+
+pentspc7.obj : $(PTH)\pentspc7.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspc7.c
+
+pentspec.obj : $(PTH)\pentspec.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspec.c
+
+pentspl1.obj : $(PTH)\pentspl1.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspl1.c
+
+pentspl2.obj : $(PTH)\pentspl2.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspl2.c
+
+pentspl3.obj : $(PTH)\pentspl3.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspl3.c
+
+pentspl4.obj : $(PTH)\pentspl4.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspl4.c
+
+pentspl5.obj : $(PTH)\pentspl5.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspl5.c
+
+pentspl6.obj : $(PTH)\pentspl6.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspl6.c
+
+pentspl7.obj : $(PTH)\pentspl7.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspl7.c
+
+pentspl8.obj : $(PTH)\pentspl8.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspl8.c
+
+pentspll.obj : $(PTH)\pentspll.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentspll.c
+
+pentstar.obj : $(PTH)\pentstar.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentstar.c
+
+pentstrg.obj : $(PTH)\pentstrg.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentstrg.c
+
+penttime.obj : $(PTH)\penttime.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\penttime.c
+
+penttrap.obj : $(PTH)\penttrap.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\penttrap.c
+
+penttree.obj : $(PTH)\penttree.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\penttree.c
+
+penttwn1.obj : $(PTH)\penttwn1.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\penttwn1.c
+
+penttwn2.obj : $(PTH)\penttwn2.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\penttwn2.c
+
+penttwn3.obj : $(PTH)\penttwn3.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\penttwn3.c
+
+pentuse.obj  : $(PTH)\pentuse.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentuse.c
+
+pentutl1.obj : $(PTH)\pentutl1.c $(MAIN_HEAD)
+		$(SPCOMP) $(PTH)\pentutl1.c
+
+pentutl2.obj : $(PTH)\pentutl2.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentutl2.c
+
+pentutl3.obj : $(PTH)\pentutl3.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentutl3.c
+
+pentutl4.obj : $(PTH)\pentutl4.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentutl4.c
+
+pentutl5.obj : $(PTH)\pentutl5.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentutl5.c
+
+pentutl6.obj : $(PTH)\pentutl6.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentutl6.c
+
+pentwand.obj  : $(PTH)\pentwand.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentwand.c
+
+pentwiz.obj  : $(PTH)\pentwiz.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentwiz.c
+
+pentwthr.obj : $(PTH)\pentwthr.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentwthr.c
+
+pentxp.obj : $(PTH)\pentxp.c $(MAIN_HEAD)
+		$(SZCOMP) $(PTH)\pentxp.c
+
+pent.exe :			PENTADVN.OBJ \
+				PENTBANK.OBJ \
+				PENTBARD.OBJ \
+				PENTBOMB.OBJ \
+				PENTBOSS.OBJ \
+				PENTBOX.OBJ  \
+				PENTBRDG.OBJ \
+				PENTCATH.OBJ \
+				PENTCELT.OBJ \
+				PENTCHST.OBJ \
+				PENTCM10.OBJ \
+				PENTCM15.OBJ \
+				PENTCM20.OBJ \
+				PENTCM25.OBJ \
+				PENTCM30.OBJ \
+				PENTCM35.OBJ \
+				PENTCM40.OBJ \
+				PENTCM45.OBJ \
+				PENTCM50.OBJ \
+				PENTCM55.OBJ \
+				PENTCM56.OBJ \
+				PENTCM60.OBJ \
+				PENTCM61.OBJ \
+				PENTCM62.OBJ \
+				PENTCM63.OBJ \
+				PENTCM64.OBJ \
+				PENTCM65.OBJ \
+				PENTCM66.OBJ \
+				PENTCM67.OBJ \
+				PENTCM70.OBJ \
+				PENTCM80.OBJ \
+				PENTCM90.OBJ \
+				PENTDAMG.OBJ \
+				PENTDATA.OBJ \
+				PENTDISC.OBJ \
+				PENTDISE.OBJ \
+				PENTDIST.OBJ \
+				PENTDNG1.OBJ \
+				PENTDNG2.OBJ \
+				PENTDNG3.OBJ \
+				PENTDNG4.OBJ \
+                PENTEFFC.OBJ \
+                PENTENVP.OBJ \
+				PENTFALL.OBJ \
+				PENTFINI.OBJ \
+				PENTFND1.OBJ \
+				PENTFND2.OBJ \
+				PENTFND3.OBJ \
+				PENTFND4.OBJ \
+				PENTFND5.OBJ \
+				PENTFND6.OBJ \
+				PENTFND7.OBJ \
+				PENTFND8.OBJ \
+				PENTGILD.OBJ \
+				PENTGIVE.OBJ \
+				PENTGRP1.OBJ \
+				PENTGRP2.OBJ \
+				PENTGRP3.OBJ \
+				PENTGRP4.OBJ \
+				PENTHLL1.OBJ \
+				PENTHLL2.OBJ \
+				PENTHERB.OBJ \
+				PENTHUNT.OBJ \
+				PENTINCI.OBJ \
+				PENTINN.OBJ  \
+				PENTLEVL.OBJ \
+				PENTLOAD.OBJ \
+				PENTMAIN.OBJ \
+				PENTMAP.OBJ  \
+				PENTMENU.OBJ \
+				PENTMNTH.OBJ \
+				PENTMOUS.OBJ \
+				PENTMRK1.OBJ \
+				PENTMRK2.OBJ \
+				PENTMRK3.OBJ \
+				PENTMRK4.OBJ \
+				PENTMRK5.OBJ \
+				PENTMRK6.OBJ \
+				PENTMRK7.OBJ \
+				PENTMRK8.OBJ \
+				PENTNULL.OBJ \
+				PENTOPT.OBJ  \
+				PENTOTHR.OBJ \
+				PENTPAGE.OBJ \
+				PENTPOIS.OBJ \
+				PENTPOTN.OBJ \
+				PENTPRAY.OBJ \
+				PENTPRNT.OBJ \
+				PENTPROV.OBJ \
+				PENTPRTY.OBJ \
+				PENTRAI1.OBJ \
+				PENTRAI2.OBJ \
+				PENTRAI3.OBJ \
+				PENTREAS.OBJ \
+				PENTREDY.OBJ \
+				PENTREST.OBJ \
+				PENTRING.OBJ \
+				PENTRN0.OBJ  \
+				PENTRN1.OBJ  \
+				PENTRN2.OBJ  \
+				PENTRN3.OBJ  \
+				PENTRN4.OBJ  \
+				PENTRN5.OBJ  \
+				PENTRN6.OBJ  \
+				PENTRN7.OBJ  \
+				PENTRN8.OBJ  \
+				PENTRN9.OBJ  \
+				PENTRUIN.OBJ \
+				PENTRUMR.OBJ \
+				PENTRUNE.OBJ \
+				PENTSHOW.OBJ \
+				PENTSIGN.OBJ \
+				PENTSITU.OBJ \
+				PENTSND.OBJ  \
+				PENTSNOT.OBJ \
+				PENTSORT.OBJ \
+				PENTSPC1.OBJ \
+				PENTSPC2.OBJ \
+				PENTSPC3.OBJ \
+				PENTSPC4.OBJ \
+				PENTSPC5.OBJ \
+				PENTSPC6.OBJ \
+				PENTSPC7.OBJ \
+				PENTSPEC.OBJ \
+				PENTSPL1.OBJ \
+				PENTSPL2.OBJ \
+				PENTSPL3.OBJ \
+				PENTSPL4.OBJ \
+				PENTSPL5.OBJ \
+				PENTSPL6.OBJ \
+				PENTSPL7.OBJ \
+				PENTSPL8.OBJ \
+				PENTSPLL.OBJ \
+				PENTSTAR.OBJ \
+				PENTSTRG.OBJ \
+				PENTTIME.OBJ \
+				PENTTRAP.OBJ \
+				PENTTREE.OBJ \
+				PENTTWN1.OBJ \
+				PENTTWN2.OBJ \
+				PENTTWN3.OBJ \
+				PENTUSE.OBJ  \
+				PENTUTL1.OBJ \
+				PENTUTL2.OBJ \
+				PENTUTL3.OBJ \
+				PENTUTL4.OBJ \
+				PENTUTL5.OBJ \
+				PENTUTL6.OBJ \
+				PENTWAND.OBJ \
+				PENTWIZ.OBJ  \
+				PENTWTHR.OBJ \
+				PENTXP.OBJ
+!IF "$(STATUS)"=="DEV"
+				link <pent.lnk
+!ELSE
+				link <pent.lnk
+!ENDIF

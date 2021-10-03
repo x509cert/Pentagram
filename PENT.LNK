@@ -1,0 +1,156 @@
+pentmain+
+pentenvp+
+pentsnd +
+pentstrg+
+pentutl1+
+pentutl2+
+pentutl3+
+pentutl4+
+pentutl5+
+pentutl6+
+pentnull+
+pentmous+
+pentwthr+
+pentgrp1+
+pentgrp2+
+pentgrp3+
+penteffc+
+pentprty+
+penttime+
+pentdamg+
+pentinci+
+pentspll+
+pentsort+
+pentpois+
+pentxp  +
+pentcm90+
+pentcm20+
+pentcm64+
+pentfnd8+
+pentfnd2+
+pentdata+
+pentbomb+
+pentfall+
+pentmnth+
+pentbox +
+pentpray+
+pentload+
+pentpage+
+pentmenu+
+pentreas+
+pentbank+
+pentmrk1+
+pentmrk2+
+pentmrk3+
+pentmrk4+
+pentmrk5+
+pentmrk6+
+pentmrk7+
+pentmrk8+
+pentinn +
+pentrumr+
+pentrai1+
+pentrai2+
+pentrai3+
+pentdisc+
+pentopt +
+pentcath+
+pentsitu+
+pentshow+
+pentprnt+
+pentlevl+
+pentredy+
+penttwn1+
+penttwn2+
+penttwn3+
+pentsign+
+pentcelt+
+penthunt+
+pentherb+
+pentcm10+
+pentfnd1+
+pentfnd7+
+pentcm15+
+pentcm25+
+pentcm30+
+pentcm35+
+pentcm40+
+pentcm45+
+pentcm50+
+pentcm55+
+pentcm56+
+pentcm60+
+pentcm61+
+pentcm62+
+pentcm63+
+pentcm65+
+pentcm66+
+pentcm67+
+pentcm70+
+pentcm80+
+pentfnd3+
+pentfnd4+
+pentfnd5+
+pentfnd6+
+pentdng1+
+pentdng2+
+pentdng3+
+pentdng4+
+pentsnot+
+penttrap+
+pentchst+
+pentspec+
+pentspc1+
+pentspc2+
+pentspc3+
+pentspc4+
+pentspc5+
+pentspc6+
+pentspc7+
+pentstar+
+pentgild+
+pentfini+
+pentruin+
+pentrn0 +
+pentrn1 +
+pentrn2 +
+pentrn3 +
+pentrn4 +
+pentrn5 +
+pentrn6 +
+pentrn7 +
+pentrn8 +
+pentrn9 +
+penthll1+
+penthll2+
+pentgrp4+
+pentuse +
+pentgive+
+pentdist+
+pentring+
+pentwand+
+pentpotn+
+pentdise+
+pentadvn+
+pentmap +
+pentrune+
+pentbrdg+
+pentrest+
+pentothr+
+penttree+
+pentboss+
+pentbard+
+pentprov+
+pentwiz +
+pentspl1+
+pentspl2+
+pentspl3+
+pentspl4+
+pentspl5+
+pentspl6+
+pentspl7+
+pentspl8 /NOI /NOE /SE:600 /ST:0xA00 /INFO /DYNAMIC:900
+pent.pgm
+pent.map
+oldmouse+lbl+lturbo+mhega+lmemleft+lmmalloc+lsprite+graphics+oldnames+move
+pent.def;
