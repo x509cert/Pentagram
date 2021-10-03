@@ -18,10 +18,11 @@ Here's some points of interest...
 5) It ran on MS-DOS 3.2
 6) The game did not take advantage of the extra 384kB of extended RAM, by design!
 7) The video card of the day was EGA (https://en.wikipedia.org/wiki/Enhanced_Graphics_Adapter)
-8) I wrote the code on an Amstrad PC1640 (https://en.wikipedia.org/wiki/PC1512) in my bedroom!
-9) The Microsoft Linker that came with the MS C compiler could not handle this code, so I had to use the Phoenix Linker (plink86, https://everything2.com/title/plink) - it allows for more control of overlaid code with better memory management.
-10) The ASM code is primarily to handle video manipulation, such as smooth pixel scrolling of the main window.
-11) I have an EXE of the code, and it runs in DOSBox. My 20yr old son has played it, and says "It doesn't suck!"
-12) To aid installation of the resulting binary and supporting files (bitmaps, maps, dungeons etc.), I wrote my own installation tool, installation language (I called it MELT - Michael's Experimental Language Translator) and compression tool - it used Limpel-Zev and Huffman, whichever offered the best compression based on the data.
-13) Remember, filenames back then were only 8.3!
-14) I kept out of trouble :) 
+8) I used Microsoft C Compiler 5.1 (https://www.pcjs.org/software/pcx86/lang/microsoft/c/5.10/) and MASM 5.1
+9) I wrote the code on an Amstrad PC1640 (https://en.wikipedia.org/wiki/PC1512) in my bedroom!
+10) The Microsoft Linker that came with the MS C compiler could not handle this code, so I had to use the Phoenix Linker (plink86, https://everything2.com/title/plink) - it allows for more control of overlaid code with better memory management.
+11) The ASM code is primarily to handle video manipulation, such as smooth pixel scrolling of the main window.
+12) I have an EXE of the code, and it runs in DOSBox. My 20yr old son has played it, and says "It doesn't suck!"
+13) To aid installation of the resulting binary and supporting files (bitmaps, maps, dungeons etc.), I wrote my own installation tool, installation language (I called it MELT - Michael's Experimental Language Translator) and compression tool - it used Limpel-Zev and Huffman, whichever offered the best compression based on the data.
+14) Remember, filenames back then were only 8.3!
+15) I kept out of trouble :) 
