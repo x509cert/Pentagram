@@ -1,5 +1,5 @@
 # Pentagram
-A D&amp;D-style game I wrote YEARS ago when I was a kid!
+C and ASM source to a D&amp;D-style game I wrote YEARS ago when I was a kid!
 
 There's a long story to this. I was living in New Zealand, and my girlfriend at the time was heading to Europe for six months with her girlfriends. So I had to come up with something to do to keep my out of trouble. So I decided to write a role-playing game (RPG)! 
 
