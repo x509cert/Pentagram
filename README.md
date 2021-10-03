@@ -27,4 +27,5 @@ Here's some points of interest...
 14) I wrote a bunch of supporting tools - a map editor, a dungeon builder and a tool to create sprites and other graphics.
 15) Remember, filenames back then were only 8.3!
 16) I wrote a manual for the game using Windows and Aldus PageMaker and the game won a New Zealand Software Award in 1990 :) 
-17) I kept out of trouble :) 
+17) It's fun to see me thinking about optimization back then. Look at ffplot.asm - line 20! 
+18) I kept out of trouble :) 
